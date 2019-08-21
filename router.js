@@ -7,7 +7,7 @@ let database = new Warehouse.Database()
 
 router.get("/", function(req, res){
     res.send("Welcome to the Warehouse Management System");
-})
+});
 
 
 router.get("/newItem/:itemName/:quantity/:price", function(req, res){
@@ -46,6 +46,6 @@ router.get("/totalValue/", function(req, res){
 
 router.get("*", function(req, res){
     res.send("Error 404: Function not found");
-})
+});
 
 module.exports = router;
